@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>mo-quarter-picker</title>
+  <link href="https://cdn.bootcdn.net/ajax/libs/element-ui/2.15.8/theme-chalk/index.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <h1>
+    季节范围选择器：mo-quarter-picker
+  </h1>
+
+  <div id="app">
+    <mo-quarter-picker :value.sync="value"
+                       @on-change="handleChange"></mo-quarter-picker>
+  </div>
+
+  <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/element-ui/2.15.8/index.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/moment.js/2.29.2/moment.min.js"></script>
+  <script src="/dist/mo-quarter-picker.min.js"></script>
+
+  <script>
+    const app = new Vue({
+      el: '#app',
+      data() {
+        return {
+          value: null,
+        }
+      },
+
+      methods: {
+        handleChange(value) {
+          console.log(value)
+        }
+      }
+    })
+
+  </script>
+</body>
+
+</html>
