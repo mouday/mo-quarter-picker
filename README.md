@@ -2,16 +2,22 @@
 
 一个基于 Vue 和 ElementUI 的季节范围选择器
 
-https://element.eleme.cn/#/zh-CN/component/installation
-
-用于业务统一封装
-
-在线demo: [https://mouday.github.io/mo-quarter-picker/test.html](https://mouday.github.io/mo-quarter-picker/test.html)
-
 - NPM: https://www.npmjs.com/package/mo-quarter-picker
 - Github: https://github.com/mouday/mo-quarter-picker
 
+用到的第三方库
+
+- Vue2.js [https://cn.vuejs.org/v2/guide/](https://cn.vuejs.org/v2/guide/)
+
+- element-ui [https://element.eleme.cn/#/zh-CN/component/installation](https://element.eleme.cn/#/zh-CN/component/installation)
+
+- momentjs [http://momentjs.cn/](http://momentjs.cn/)
+
+在线demo: [https://mouday.github.io/mo-quarter-picker/test.html](https://mouday.github.io/mo-quarter-picker/test.html)
+
 ## 方式一：CDN 引入
+
+[https://cdn.jsdelivr.net/npm/mo-quarter-picker/](https://cdn.jsdelivr.net/npm/mo-quarter-picker/)
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/moment-ui@1.0.2/dist/moment-ui.js"></script>
