@@ -1,6 +1,6 @@
 # mo-quarter-picker
 
-一个基于 Vue 和 ElementUI 的季节范围选择器
+一个基于 Vue2 和 ElementUI 的季节范围选择器
 
 - NPM: https://www.npmjs.com/package/mo-quarter-picker
 - Github: https://github.com/mouday/mo-quarter-picker
@@ -20,7 +20,7 @@
 [https://cdn.jsdelivr.net/npm/mo-quarter-picker/](https://cdn.jsdelivr.net/npm/mo-quarter-picker/)
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/moment-ui@1.0.2/dist/moment-ui.js"></script>
+<script src="https://mouday.github.io/mo-quarter-picker/dist/mo-quarter-picker.min.js"></script>
 ```
 
 Hello world
@@ -55,7 +55,7 @@ Hello world
     <script src="https://cdn.bootcdn.net/ajax/libs/element-ui/2.15.8/index.min.js"></script>
     <script src="https://cdn.bootcdn.net/ajax/libs/moment.js/2.29.2/moment.min.js"></script>
 
-    <script src="/dist/mo-quarter-picker.min.js"></script>
+    <script src="https://mouday.github.io/mo-quarter-picker/dist/mo-quarter-picker.min.js"></script>
 
     <script>
       const app = new Vue({
@@ -105,11 +105,12 @@ new Vue({
 ## 参数
 
 参数	| 说明	| 类型	| 可选值	| 默认值
+- | - | - | - | -
 value | 当前是 | Array | null，例如：['2022-09-01', '2022-06-01'] | null
 
 ## 事件
 
-事件名称	| 说明	| 回调参数
+事件名称 | 说明	| 回调参数
 - | - | -
 on-change | 用户修改选定的值时触发 | data
 
