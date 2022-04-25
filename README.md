@@ -4,9 +4,11 @@
 
 ![](static/demo.png)
 
+- Home: [https://mouday.github.io/mo-quarter-picker/](https://mouday.github.io/mo-quarter-picker/)
 - NPM: [https://www.npmjs.com/package/mo-quarter-picker](https://www.npmjs.com/package/mo-quarter-picker)
 - Github: [https://github.com/mouday/mo-quarter-picker](https://github.com/mouday/mo-quarter-picker)
-- Home: [https://mouday.github.io/mo-quarter-picker/](https://mouday.github.io/mo-quarter-picker/)
+
+element-ui没有季节范围选择器，而字节跳动开源的UI库[arco.design](https://arco.design/vue/component/date-picker)，只支持Vue3，奈何老项目是Vue2的，只能自己动手了
 
 用到的第三方库
 
