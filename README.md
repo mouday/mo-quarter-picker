@@ -1,10 +1,15 @@
 # mo-quarter-picker
 
-一个基于 Vue 和 ElementUI 的扩展 UI 组件库
+一个基于 Vue 和 ElementUI 的季节范围选择器
 
 https://element.eleme.cn/#/zh-CN/component/installation
 
 用于业务统一封装
+
+在线demo: [https://mouday.github.io/mo-quarter-picker/test.html](https://mouday.github.io/mo-quarter-picker/test.html)
+
+- NPM: https://www.npmjs.com/package/mo-quarter-picker
+- Github: https://github.com/mouday/mo-quarter-picker
 
 ## 方式一：CDN 引入
 
@@ -69,7 +74,7 @@ Hello world
 ## 方式二：NPM
 
 ```
-npm i moment-ui -S
+npm i mo-quarter-picker -S
 ```
 
 main.js
@@ -89,4 +94,37 @@ new Vue({
   el: "#app",
   render: h => h(App)
 });
+```
+
+## 参数
+
+参数	| 说明	| 类型	| 可选值	| 默认值
+value | 当前是 | Array | null，例如：['2022-09-01', '2022-06-01'] | null
+
+## 事件
+
+事件名称	| 说明	| 回调参数
+- | - | -
+on-change | 用户修改选定的值时触发 | data
+
+on-change 回调参数 data：
+```js
+[
+  {
+    end_date: "2022-09-01"
+    label: "Q3"
+    quarter: 3
+    start_date: "2022-07-01"
+    value: "2022-3"
+    year: 2022
+  },
+  {
+    end_date: "2022-06-01"
+    label: "Q2"
+    quarter: 2
+    start_date: "2022-04-01"
+    value: "2023-2"
+    year: 2023
+  }
+]
 ```
