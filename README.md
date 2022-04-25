@@ -13,7 +13,7 @@
 
 - momentjs [http://momentjs.cn/](http://momentjs.cn/)
 
-在线demo: [https://mouday.github.io/mo-quarter-picker/test.html](https://mouday.github.io/mo-quarter-picker/test.html)
+在线 demo: [https://mouday.github.io/mo-quarter-picker/test.html](https://mouday.github.io/mo-quarter-picker/test.html)
 
 ## 方式一：CDN 引入
 
@@ -89,12 +89,12 @@ main.js
 import Vue from "vue";
 import App from "./App.vue";
 
-import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css'
-import MoQuarterPicker from 'mo-quarter-picker'
+import ElementUI from "element-ui";
+import "element-ui/lib/theme-chalk/index.css";
+import MoQuarterPicker from "mo-quarter-picker";
 
-Vue.use(ElementUI)
-Vue.use(MoQuarterPicker)
+Vue.use(ElementUI);
+Vue.use(MoQuarterPicker);
 
 new Vue({
   el: "#app",
@@ -104,17 +104,18 @@ new Vue({
 
 ## 参数
 
-参数	| 说明	| 类型	| 可选值	| 默认值
-- | - | - | - | -
-value | 当前是 | Array | null，例如：['2022-09-01', '2022-06-01'] | null
+| 参数  | 说明   | 类型  | 可选值                                   | 默认值 |
+| ----- | ------ | ----- | ---------------------------------------- | ------ |
+| value | 当前是 | Array | null，例如：['2022-09-01', '2022-06-01'] | null   |
 
 ## 事件
 
-事件名称 | 说明	| 回调参数
-- | - | -
-on-change | 用户修改选定的值时触发 | data
+| 事件名称  | 说明                   | 回调参数 |
+| --------- | ---------------------- | -------- |
+| on-change | 用户修改选定的值时触发 | data     |
 
 on-change 回调参数 data：
+
 ```js
 [
   {
