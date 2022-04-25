@@ -2,8 +2,11 @@
 
 一个基于 Vue2 和 ElementUI 的季节范围选择器
 
-- NPM: https://www.npmjs.com/package/mo-quarter-picker
-- Github: https://github.com/mouday/mo-quarter-picker
+![](static/demo.png)
+
+- NPM: [https://www.npmjs.com/package/mo-quarter-picker](https://www.npmjs.com/package/mo-quarter-picker)
+- Github: [https://github.com/mouday/mo-quarter-picker](https://github.com/mouday/mo-quarter-picker)
+- Home: [https://mouday.github.io/mo-quarter-picker/](https://mouday.github.io/mo-quarter-picker/)
 
 用到的第三方库
 
