@@ -2,7 +2,7 @@
 
 一个基于 Vue2 和 ElementUI 的季节范围选择器
 
-![](static/demo.png)
+![](public/static/demo.png)
 
 - Home: [https://mouday.github.io/mo-quarter-picker/](https://mouday.github.io/mo-quarter-picker/)
 - NPM: [https://www.npmjs.com/package/mo-quarter-picker](https://www.npmjs.com/package/mo-quarter-picker)
@@ -111,7 +111,7 @@ new Vue({
 
 | 参数  | 说明   | 类型  | 可选值                                   | 默认值 |
 | ----- | ------ | ----- | ---------------------------------------- | ------ |
-| value | 当前值 | Array | null，例如：['2022-09-01', '2022-06-01']支持`sync` | null   |
+| value | 当前值 | Array | null，例如：['2022-07-01', '2024-06-30']支持`sync` | null   |
 
 ## 事件
 
@@ -124,7 +124,7 @@ on-change 回调参数 data：
 ```js
 [
   {
-    end_date: "2022-09-01"
+    end_date: "2022-09-30"
     label: "Q3"
     quarter: 3
     start_date: "2022-07-01"
@@ -132,7 +132,7 @@ on-change 回调参数 data：
     year: 2022
   },
   {
-    end_date: "2022-06-01"
+    end_date: "2024-06-30"
     label: "Q2"
     quarter: 2
     start_date: "2022-04-01"
