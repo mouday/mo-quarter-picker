@@ -22,6 +22,7 @@
   <script src="https://cdn.bootcdn.net/ajax/libs/moment.js/2.29.2/moment.min.js"></script>
 
   <script src="https://mouday.github.io/mo-quarter-picker/dist/mo-quarter-picker.min.js"></script>
+  <!-- <script src="dist/mo-quarter-picker.min.js"></script> -->
 
   <script>
     const app = new Vue({
@@ -34,6 +35,7 @@
 
       methods: {
         handleChange(value) {
+          console.log(this.value);
           console.log(value)
         }
       }

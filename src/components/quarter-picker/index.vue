@@ -102,6 +102,7 @@ export default {
 
     showValue() {
       if (this.value) {
+        console.log(this.value);
         let start_date = moment(this.value[0])
         let end_date = moment(this.value[1])
         return [`${start_date.year()}-${start_date.quarter()}`, `${end_date.year()}-${end_date.quarter()}`]
@@ -183,12 +184,13 @@ export default {
       }
 
       this.quarter.push(quarter_item)
+      console.log(this.quarter);
 
       this.handleCheckQuarterRange();
     },
 
     handleCheckQuarterRange() {
-      // console.log(this.quarter);
+      // console.log('quarter', this.quarter);
 
       if (this.quarter.length == 2) {
         // 排序
@@ -203,13 +205,13 @@ export default {
         let result = [];
         for (let item of this.quarter) {
           // 开始日期
-          let start_quarter = this.quarter[0];
+          // let start_quarter = this.quarter[0];
           let months = getQuarterOptionMonths(item.quarter);
           let start_quarter_month = months[0];
-          let end_quarter_month = months[2];
+          let end_quarter_month = months[months.length - 1];
           // 月份从 0 开始索引
-          let start_date = moment({ year: start_quarter.year, month: start_quarter_month - 1 }).startOf("month").format('YYYY-MM-DD')
-          let end_date = moment({ year: start_quarter.year, month: end_quarter_month - 1 }).startOf("month").format('YYYY-MM-DD')
+          let start_date = moment({ year: item.year, month: start_quarter_month - 1 }).startOf("month").format('YYYY-MM-DD')
+          let end_date = moment({ year: item.year, month: end_quarter_month - 1 }).endOf("month").format('YYYY-MM-DD')
 
           result.push({
             ...item,
@@ -217,6 +219,7 @@ export default {
             end_date
           })
         }
+        // console.log('result', [result[0].start_date, result[1].end_date]);
 
         this.$emit('update:value', [result[0].start_date, result[1].end_date])
         this.$emit('on-change', result)
@@ -246,15 +249,16 @@ export default {
 
     },
 
-    formatValue(val) {
-      console.log('formatValue', val);
-      return val;
-    },
+    // formatValue(val) {
+    //   // console.log('formatValue', val);
+    //   return val;
+    // },
 
 
   },
 }
 </script>
+
 <style lang="less">
 .mark {
   position: fixed;
@@ -281,9 +285,6 @@ export default {
     width: 100%;
     height: 100%;
   }
-
-
-
 }
 
 .quarter-range-picker__box-card {
@@ -304,5 +305,6 @@ export default {
   display: none;
 }
 </style>
+
 <style scoped>
 </style>

@@ -1,14 +1,14 @@
 <template>
   <div id="app">
     <!-- 使用选择器 -->
-    <mo-quarter-picker :value.sync="value"
-                       @on-change="handleChange"></mo-quarter-picker>
-
+    <mo-quarter-picker
+      :value.sync="value"
+      @on-change="handleChange"
+    ></mo-quarter-picker>
   </div>
 </template>
 
 <script>
-
 export default {
   name: "app",
   data() {
@@ -19,20 +19,16 @@ export default {
 
       // switchValue: 0,
       // switchValue: '0',
-      switchValue: true,
+      switchValue: true
     };
   },
   methods: {
     handleChange(value) {
+      console.log(this.value);
       console.log(value);
-    },
-
-    handelSwitchChange(val) {
-      console.log(val, this.switchValue);
-    },
-  },
+    }
+  }
 };
 </script>
 
-<style lang="less">
-</style>
+<style lang="less"></style>
