@@ -141,3 +141,23 @@ on-change 回调参数 data：
   }
 ]
 ```
+
+自定义颜色
+
+```less
+:root{
+  --primary-color: #6833cf;
+}
+
+// 季节选择器
+// 选中季节的背景色
+.quarter-picker__item--active .quarter-picker__item__label,
+.quarter-picker__item:hover .quarter-picker__item__label {
+  background-color: var(--primary-color) !important;
+}
+
+// 当前季节下的小圆点
+.quarter-picker__item__today:after {
+  background-color: var(--primary-color) !important;
+}
+```
