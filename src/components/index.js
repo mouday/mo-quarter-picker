@@ -1,6 +1,16 @@
-import QuarterPicker from "./quarter-picker/index.vue";
+import QuarterRangePicker from "./quarter-range-picker/index.vue";
+import YearRangePicker from "./year-range-picker/index.vue";
+import MonthRangePicker from "./month-range-picker/index.vue";
+import WeekRangePicker from "./week-range-picker/index.vue";
+import DateRangePicker from "./date-range-picker/index.vue";
 
-const components = [QuarterPicker];
+const components = [
+  QuarterRangePicker,
+  YearRangePicker,
+  MonthRangePicker,
+  WeekRangePicker,
+  DateRangePicker
+];
 
 // 注册组件
 const install = function(Vue) {

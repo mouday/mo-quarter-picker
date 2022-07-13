@@ -58,7 +58,7 @@ import moment from 'moment';
 import { getQuarterOptionMonths } from './config.js';
 
 export default {
-  name: 'mo-quarter-picker',
+  name: 'mo-quarter-range-picker',
 
   components: {
     QuarterPicker

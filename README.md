@@ -161,3 +161,33 @@ on-change 回调参数 data：
   background-color: var(--primary-color) !important;
 }
 ```
+
+## mo-quarter-picker 2.0
+
+![](img/demo.png)
+
+增加 周、月、季度、年范围选择器
+
+新增组件
+
+```html
+mo-date-range-picker
+mo-week-range-picker
+mo-month-range-picker
+mo-year-range-picker
+```
+
+修改组件名
+
+```html
+mo-quarter-picker => mo-quarter-range-picker
+```
+
+示例：
+
+```html
+<mo-month-range-picker
+      :value.sync="value"
+      @on-change="handleChange"
+    ></mo-month-range-picker>
+```
