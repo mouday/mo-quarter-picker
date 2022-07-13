@@ -42,15 +42,13 @@
 
 <script>
     // created at 2022-07-07
+    import moment from 'moment';
     import { pickerTypeOptions, pickerTypeEnum } from './config.js';
     import WeekRangePicker from '../week-range-picker/index.vue';
     import YearRangePicker from '../year-range-picker/index.vue';
     import MonthRangePicker from '../month-range-picker/index.vue';
     import QuarterRangePicker from '../quarter-range-picker/index.vue';
-    // import { DatePicker } from 'ant-design-vue';
-    // import { QuarterPicker } from 'mo-quarter-picker';
-    import moment from 'moment';
-
+    
     export default {
         name: 'mo-date-range-picker',
 
