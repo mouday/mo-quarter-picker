@@ -186,8 +186,33 @@ mo-quarter-picker => mo-quarter-range-picker
 示例：
 
 ```html
+<!-- 月份 -->
 <mo-month-range-picker
       :value.sync="value"
       @on-change="handleChange"
-    ></mo-month-range-picker>
+  >
+</mo-month-range-picker>
+
+<!-- 星期 -->
+<mo-week-range-picker
+      :value.sync="value"
+      @on-change="handleChange">
+</mo-week-range-picker>
+
+<!-- 年度 -->
+<mo-year-range-picker 
+        :value.sync="value"
+        @on-change="handleChange">
+      </mo-year-range-picker>
+
+<!-- 日期范围选择器 -->
+<mo-date-range-picker 
+      :type.sync="type"
+      :week-value.sync="week_value"
+      :month-value.sync="month_value"
+      :quarter-value.sync="quarter_value"
+      :year-value.sync="year_value"
+      @on-value-change="handleValueChange"
+      @on-type-change="handleTypeChange"
+    ></mo-date-range-picker>
 ```
