@@ -114,10 +114,10 @@ if (process.env.NODE_ENV === "production") {
   //   })
   // ]);
 
-  module.exports.plugins = [
-    // 请确保引入这个插件！
-    new VueLoaderPlugin()
-  ];
+  // module.exports.plugins = [
+  //   // 请确保引入这个插件！
+  //   // new VueLoaderPlugin()
+  // ];
 
   module.exports.optimization = {
     // 开发环境下启用 CSS 优化
