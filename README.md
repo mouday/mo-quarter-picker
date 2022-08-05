@@ -20,6 +20,8 @@ element-ui没有季节范围选择器，而字节跳动开源的UI库[arco.desig
 
 在线 demo: [https://mouday.github.io/mo-quarter-picker/dist/](https://mouday.github.io/mo-quarter-picker/dist/)
 
+使用示例源码：[https://github.com/mouday/mo-quarter-picker/blob/master/src/App.vue](https://github.com/mouday/mo-quarter-picker/blob/master/src/App.vue)
+
 ## 方式一：CDN 引入
 
 [https://cdn.jsdelivr.net/npm/mo-quarter-picker/](https://cdn.jsdelivr.net/npm/mo-quarter-picker/)

@@ -77,7 +77,7 @@ module.exports = {
     }),
     // 版本信息
     new webpack.BannerPlugin({
-      banner: `${package.name} V${package.version}`,
+      banner: `${package.name} \nV${package.version}`,
     })
   ],
   
