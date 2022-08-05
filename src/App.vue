@@ -4,7 +4,7 @@
     <div class="mo-row">
         <span>星期范围选择器</span>
         <mo-week-range-picker
-              :value="value"
+              :value.sync="week_value"
               @on-change="handleChange">
         </mo-week-range-picker>
     </div>
@@ -12,7 +12,7 @@
     <div class="mo-row">
         <span>月份范围选择器</span>
         <mo-month-range-picker
-          :value.sync="value"
+          :value.sync="month_value"
           @on-change="handleChange"
         ></mo-month-range-picker>
     </div>
@@ -20,7 +20,7 @@
     <div class="mo-row">
           <span>季度范围选择器</span>
         <mo-quarter-range-picker
-          :value.sync="value"
+          :value.sync="quarter_value"
           @on-change="handleChange"
         ></mo-quarter-range-picker>
       </div>
@@ -28,7 +28,7 @@
     <div class="mo-row">
       <span>年度范围选择器</span>
       <mo-year-range-picker 
-        :value.sync="value"
+        :value.sync="year_value"
             @on-change="handleChange">
       </mo-year-range-picker>
     </div>
@@ -53,7 +53,7 @@
 </template>
 
 <script>
-  import moment from 'moment';
+import moment from 'moment';
 
 export default {
   name: "app",
@@ -89,7 +89,7 @@ export default {
 
     handleTypeChange(){
         console.log('handleTypeChange', this.type);
-        this.resetData();
+        // this.resetData();
     },
 
     handleWeekRangeChange(){

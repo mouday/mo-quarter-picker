@@ -37,7 +37,8 @@
 import moment from 'moment';
 
 export default {
-  name: 'mo-year-range-picker',
+  // mo-year-range-picker
+  name: 'MoYearRangePicker',
 
   props: {
     value: {

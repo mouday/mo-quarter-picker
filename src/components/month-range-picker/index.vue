@@ -20,7 +20,8 @@ import moment from 'moment';
 
 
 export default {
-  name: 'mo-month-range-picker',
+  // mo-month-range-picker
+  name: 'MoMonthRangePicker',
 
   props: {
     value: {

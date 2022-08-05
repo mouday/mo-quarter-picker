@@ -34,7 +34,8 @@
     import moment from 'moment';
 
     export default {
-        name: 'mo-week-range-picker',
+        // mo-week-range-picker
+        name: 'MoWeekRangePicker',
 
         props: {
             value: {

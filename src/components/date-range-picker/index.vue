@@ -50,7 +50,8 @@
     import QuarterRangePicker from '../quarter-range-picker/index.vue';
     
     export default {
-        name: 'mo-date-range-picker',
+        // mo-date-range-picker
+        name: 'MoDateRangePicker',
 
         props: {
             type:{

@@ -14,7 +14,9 @@ const components = [
 
 // 注册组件
 const install = function(Vue) {
+  // console.log('install');
   components.forEach(component => {
+    // console.log(component.name);
     Vue.component(component.name, component);
   });
 };
