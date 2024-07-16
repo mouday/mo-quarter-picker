@@ -20,7 +20,7 @@
     <el-date-picker class="mo-year-range-picker__end"
         :value="end_year"
         type="year"
-        placeholder="开始年"
+        placeholder="截止年"
         :clearable="false" 
         :editable="false"
         value-format="yyyy-MM-dd"
